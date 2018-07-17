@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+#back-ground{
+	background-image: url("/ProjectOne/html/wallpaper4.jpg");
+ 	background-size: 2000px 1200px;
+	background-attachment: fixed;
+	background-position: right top;
+}
+
+.table-box {
+	position: fixed;
+	top: 20vh;
+	left: 30vw;
+	height: 35vh;
+	width: 40vw;
+}
+
+#accountTable {
+/* 	border-collapse: collapse; */
+	border:5px solid #ddd;
+	width: 65%;
+ 	background-color:rgba(255,255,255,0.5);
+ 	font-weight: 600;
+}
+
+#accountTable td {
+	padding: 3px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.input1 {
+	width: 80%;
+	font-size: 15px;
+	background-color: #FFC783;
+	color: #5C0D57;
+}
+
+.input1[type=text]:focus {
+    border: 3px solid #571725;
+}
+
+.input1[type=password]:focus {
+    border: 3px solid #571725;
+}
+
+select {
+    width: 60%;
+    padding: 3px 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    color: #5C0D57;
+}
+
+select:focus {
+    border: 3px solid #571725;
+}
+
+.button {
+    background-color: #EB847B;
+    border: none;
+    color: #5C0D57;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+	background-color: #C2251E;	
+}
+
+a:link,a:visited {
+	text-decoration:none;
+}
+
+p {
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}

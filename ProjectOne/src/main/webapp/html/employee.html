@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+
+<link rel='stylesheet' type='text/css' href='../css/basic3.css'>
+
+</head>
+<body class='bg'>
+
+	<button class="tablink" onclick="openNav()">Menu</button>
+	<button class="tablink" onclick="openPage('Home',this)" id="defaultOpen">Home</button>
+	<button class="tablink" onclick="openPage('List', this)">Show List</button>
+	<button class="tablink" onclick="openPage('Reimbursement', this)">Reimbursement</button>
+	
+	<div id='Home' class='tabcontent'>
+		<div class='row'>
+			<div class='col-md-9 offset-2'>
+				<p id='welcomeTitle' class='p1'></p>
+			</div>
+		</div>
+	</div>
+	<div id="List" class="tabcontent">
+		<div class='row'>
+			<table id='table1' class='offset-1'>
+				<thead>
+					<tr>
+						<th colspan='6'>List of Current Reimbursements</th>
+					</tr>
+					<tr>
+						<th colspan='6'>
+							<button class='button' name='filterAll' onclick="filterAll()">All</button>&nbsp;&nbsp;
+							<button class='button' name='filterPending' onclick="filterPending()">Pending</button>&nbsp;&nbsp;
+							<button class='button' name='filterAccepted' onclick="filterAccepted()">Accepted</button>&nbsp;&nbsp;
+							<button class='button' name='filterDenied' onclick="filterDenied()">Denied</button>&nbsp;&nbsp;
+							<button class='button' name='filterLodging' onclick="filterLodging()">Lodging</button>&nbsp;&nbsp;
+							<button class='button' name='filterTravel' onclick="filterTravel()">Travel</button>&nbsp;&nbsp;
+							<button class='button' name='filterFood' onclick="filterFood()">Food</button>&nbsp;&nbsp;
+							<button class='button' name='filterOther' onclick="filterOther()">Other</button>
+						</th>
+					</tr>
+					<tr>
+						<th colspan='6'><hr style='border-width:10px'></th>
+					</tr>
+					<tr>
+						<th>Type</th>
+						<th>Status</th>
+						<th>Amount</th>
+						<th>Submitted Time</th>
+						<th>Description</th>
+						<th>Resolved Time</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<div id="Reimbursement" class="tabcontent">
+		<div class='row'>
+			<form>
+			<table id='table2' class='offset-8'>
+				<thead>
+					<tr>
+						<th colspan='2'>Create a Reimbursement Request</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Type</td>
+						<td>
+							<select id='reimbType'>
+								<option value='0'>Lodging</option>
+								<option value='1'>Travel</option>
+								<option value='2'>Food</option>
+								<option value='3'>Other</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Amount</td>
+						<td>$ <input type='text' id='reimbAmount' size='5px'/></td>
+					</tr>
+					<tr>
+						<td>Description</td>
+						<td><textarea rows='10' cols='60' id='description' /></textarea>
+					</tr>
+					<tr>
+						<td>Upload File</td>
+						<td><input type='file' id='fileUpload' /></td>
+					</tr>
+					<tr>
+						<td colspan='2'>
+							<div class='row offset-4'>
+								<button class='button' id='submitRequest'>Submit Request</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+		</div>
+	</div>
+
+	<div id='main'>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Laugh</a>
+			<a href="#">Cry</a>
+			<a id='logOUT' href="login.html">Logout</a>
+		</div> 
+	</div>
+ 
+	<script type="text/javascript" src="../js/employeehome.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+		integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+#back-ground{
+	background-image: url("/ProjectOne/html/wallpaper4.jpg");
+	background-size: 2000px 1200px;
+	background-attachment: fixed;
+	background-position: right top;
+}
+
+h1 {
+	color: white;
+	text-decoration: solid;
+}
+h4 {
+	color: white;
+}
+
+.login-box {
+	position: fixed;
+/* 	top: 30vh; */
+	top: 20vh;
+	left: 30vw;
+/* 	height: 30vh; */
+	height: 35vh;
+	width: 40vw;
+/*  background-color: rgba(0, 0, 0, 0.2); */
+	color: white;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.input1 {
+	width: 80%;
+	font-size: 18px;
+}
+
+p {
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}
+
+.button {
+    background-color: #CA2043;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}

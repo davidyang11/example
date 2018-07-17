@@ -1,0 +1,231 @@
+@charset "ISO-8859-1";
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 1;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+/*     background-color: #555; */
+	background-color: #110621;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #1A062F;
+}
+
+.tablink:focus {
+	outline:0;
+    border: 2px dotted #F0FD32;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.bg {
+	background-image: url("/ProjectOne/html/wallpaper1.jpg");
+	background-size: 2000px 1200px;
+	background-attachment: fixed;
+/* 	background-position: center; */
+}
+/*----------------------------------------------------------*/
+
+#table1 {
+	height: 10vh;
+	width: 60vw;
+/* 	background-color: rgba(255,255,255,0.2); */
+	border-top: 5px solid #134A34;
+	border-bottom: 5px solid #134A34;
+}
+
+#table2 {
+	height: 100%;
+	width: 66vw;
+	background-color: rgba(17,6,33,0.7);
+}
+
+#table3 {
+	height: 40vh;
+	width: 30vw;
+	background-color: rgba(17,6,33,0.7);
+	border-top: 10px solid #134A34;
+	border-left: 10px solid #134A34;
+	border-right: 10px solid #134A34;
+}
+
+#table2 thead {
+	display:block;
+	width:100%;
+}
+
+#table2 tbody {
+	display: block;
+	height:60vh;
+	width:66vw;
+	table-layout:fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#table3 tbody {
+	height:40vh;
+	width:30vw;
+}
+
+#table2 th {
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#table3 th {
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 20px solid #134A34;
+}
+
+#table2 td {
+	border: 1px solid #134A34;
+	border-bottom: 20px double #134A34; 
+	font-size: 15px;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+#table3 td {
+/* 	border: 1px solid #134A34; */
+	border-bottom: 20px double #134A34; 
+	font-size: 15px;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+.button {
+    background-color: #134A34;
+    border: none;
+    color: #FDFD32;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttonApprove {
+    background-color: #134A34;
+    border: none;
+    color: #FDFD32;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttonDeny {
+    background-color: #B1120F;
+    border: none;
+    color: #FDFD32;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover, .buttonApprove:hover {
+	background-color: #345C49;	
+}
+
+.buttonDeny:hover {
+	background-color:#EB847B;
+}
+
+.button:focus, .buttonApprove:focus, .buttonDeny:focus {
+	outline:0;
+    border: 2px dotted #F0FD32;
+}
+
+/*----------------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*------------------------------------------------------------*/
+p {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+}
